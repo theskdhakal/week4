@@ -29,10 +29,21 @@ body {
   gap: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
 .navigation {
   justify-content: space-between;
+  align-items: center;
   margin: auto;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: $bg;
   position: sticky;
   top: 0;
@@ -48,12 +59,12 @@ body {
     div {
       &:nth-child(1) {
         h1 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
       }
 
       &:nth-child(2) {
-        h2 {
+        h1 {
           font-size: 1rem;
           font-weight: 800;
         }
@@ -79,10 +90,49 @@ body {
       gap: 1.5rem;
 
       li a {
-        text-decoration: none;
         &:hover {
           color: $color-used;
         }
+      }
+    }
+  }
+}
+
+.section1 {
+  background: $color-used;
+  margin: 10rem auto 3rem auto;
+  padding: 0 2rem;
+  width: 80vw;
+  height: 40vh;
+  grid-template-areas: "two one";
+
+  .pic {
+    margin-top: -29rem;
+    grid-area: one;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 105%;
+    }
+  }
+
+  .content {
+    grid-area: two;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+
+    div {
+      flex-direction: column;
+      gap: 0.6rem;
+
+      .first {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
       }
     }
   }

@@ -22,10 +22,21 @@ body {
   gap: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
 .navigation {
   justify-content: space-between;
+  align-items: center;
   margin: auto;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: rgb(178, 180, 75);
   position: -webkit-sticky;
   position: sticky;
@@ -40,9 +51,9 @@ body {
   position: relative;
 }
 .navigation .left div:nth-child(1) h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-.navigation .left div:nth-child(2) h2 {
+.navigation .left div:nth-child(2) h1 {
   font-size: 1rem;
   font-weight: 800;
 }
@@ -59,9 +70,41 @@ body {
   margin: 0;
   gap: 1.5rem;
 }
-.navigation .right .list li a {
-  text-decoration: none;
-}
 .navigation .right .list li a:hover {
   color: skyblue;
+}
+
+.section1 {
+  background: skyblue;
+  margin: 10rem auto 3rem auto;
+  padding: 0 2rem;
+  width: 80vw;
+  height: 40vh;
+  grid-template-areas: "two one";
+}
+.section1 .pic {
+  margin-top: -29rem;
+  grid-area: one;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .pic img {
+  height: 105%;
+}
+.section1 .content {
+  grid-area: two;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.section1 .content div {
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.section1 .content div .first {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

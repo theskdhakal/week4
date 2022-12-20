@@ -75,21 +75,22 @@ a {
 }
 
 .section1 {
-  background: skyblue;
+  background-color: skyblue;
   margin: 10rem auto 3rem auto;
   padding: 0 2rem;
   width: 80vw;
   height: 40vh;
-  grid-template-areas: "two one";
+  grid-template-areas: "one two";
 }
 .section1 .pic {
-  margin-top: -29rem;
+  margin-top: -2rem;
   grid-area: one;
   justify-content: center;
   align-items: center;
 }
 .section1 .pic img {
-  height: 105%;
+  height: 95%;
+  margin-top: rem;
 }
 .section1 .content {
   grid-area: two;
@@ -107,4 +108,65 @@ a {
   font-size: 4rem;
   font-weight: bold;
   color: #fff;
+}
+.section1 .content div .tag {
+  color: #fff;
+  font-size: 2rem;
+}
+.section1 .content button {
+  border: none;
+  padding: 0.9rem 1.2rem;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+}
+.section1 .content a span i {
+  color: skyblue;
+}
+
+.section2 {
+  margin-top: 100px;
+}
+.section2 .container {
+  border: 2px solid grey;
+  margin: auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 7rem;
+  max-width: 90%;
+  border-radius: 70px;
+  gap: 3rem;
+}
+.section2 .container .info-list {
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  gap: 6rem;
+}
+.section2 .container .info-content .icon-container {
+  width: 3rem;
+  height: 3rem;
+  background: skyblue;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.section2 .container .info-content i {
+  font-size: 1.4rem;
+  color: white;
+}
+.section2 .container .info-content span h5 {
+  letter-spacing: 2px;
+}
+.section2 .container .info-content span p {
+  color: goldenrod;
+}
+.section2 .container .info-divider {
+  width: 2px;
+  height: 35px;
+  background: green;
 }/*# sourceMappingURL=style.css.map */

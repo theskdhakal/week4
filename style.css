@@ -90,7 +90,7 @@ a {
 }
 .section1 .pic img {
   height: 95%;
-  margin-top: rem;
+  margin-top: 1rem;
 }
 .section1 .content {
   grid-area: two;
@@ -169,4 +169,172 @@ a {
   width: 2px;
   height: 35px;
   background: green;
+}
+
+.section3 {
+  margin: 4rem 1rem;
+}
+.section3 .skill-container {
+  justify-content: center;
+  gap: 10rem;
+}
+.section3 .skill-container div {
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+}
+.section3 .skill-container div i {
+  font-size: 4rem;
+}
+
+.section4 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+.section4 .project-list {
+  width: 100%;
+  padding: 0rem 2rem 0rem 2rem;
+  gap: 2.5rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.section4 .project-list .project {
+  cursor: pointer;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px 4px #000;
+}
+.section4 .project-list .project .img img {
+  width: 100%;
+  height: 250px;
+}
+.section4 .project-list .project div:nth-child(2) {
+  flex-direction: column;
+  margin-top: 1.2rem;
+  padding: 1rem;
+}
+.section4 .project-list .project div:nth-child(2) p {
+  font-size: 1rem;
+}
+.section4 .project-list .project div:nth-child(2) h2 {
+  margin-top: 1.1rem;
+  font-weight: bold;
+}
+
+.section5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section5 .about-container {
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "two one";
+}
+.section5 .about-container .img {
+  grid-area: one;
+  position: relative;
+  padding: 0 2rem;
+}
+.section5 .about-container .img .bg {
+  width: 100%;
+  height: 80%;
+  background: skyblue;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.section5 .about-container .img img {
+  width: 100%;
+}
+.section5 .about-container .side {
+  grid-area: two;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.section5 .about-container .side h2 {
+  font-size: 3.5rem;
+}
+.section5 .about-container .side .interest {
+  flex-direction: column;
+}
+.section5 .about-container .side a {
+  color: blue;
+  text-decoration: underline;
+}
+.section5 .about-container .side .about {
+  line-height: 50px;
+}
+
+.section6 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.section6 .contact-container {
+  padding: 4rem;
+  gap: 8rem;
+}
+.section6 .contact-container i {
+  font-size: 4rem;
+}
+.section6 .contact-container i:nth-child(-n+2) {
+  color: blue;
+}
+.section6 .contact-container i:nth-child(4) {
+  color: skyblue;
+}
+.section6 .email-section {
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+.section6 .email-section .email {
+  background: #000;
+  color: #fff;
+  border-radius: 100px;
+  align-items: center;
+  cursor: pointer;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.section6 .email-section .email .send {
+  background: rgb(35, 179, 121);
+  z-index: 999;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 16rem;
+  background: #000;
+  color: #fff;
+  gap: 3rem;
+}
+footer .top {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .top .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .top .links h2 {
+  text-align: center;
+}
+footer .bottom {
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

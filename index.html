@@ -16,7 +16,14 @@
     />
   </head>
   <body>
+    <!-- dark-mode-button  -->
+    <input type="checkbox" id="darkmode" class="dark-mode-checkbox" />
+
     <div class="wrapper">
+      <label for="darkmode">
+        <i class="fa-solid fa-circle-half-stroke dark-mode-toggle"></i>
+      </label>
+
       <!-- navigation bar  -->
       <nav class="navigation flex">
         <div class="left flex">
@@ -30,6 +37,10 @@
         </div>
 
         <div class="right flex">
+          <input type="checkbox" id="check" />
+          <label for="check" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
           <ul class="list flex">
             <li><a href="#"> Home</a></li>
             <li><a href="#"> Skills</a></li>
@@ -240,29 +251,31 @@
 
       <!-- footer section  -->
       <footer>
-        <div class="top flex">
-          <div class="links">
-            <h2>LINKS</h2>
-            <ul class="one">
-              <li>Home</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>About</li>
-              <li>Contacts</li>
-            </ul>
+        <div class="footer-container flex">
+          <div class="top flex">
+            <div class="links">
+              <h2>LINKS</h2>
+              <ul class="one">
+                <li>Home</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+
+            <div class="external">
+              <h2>EXTERNAL LINKS</h2>
+              <ul>
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="external">
-            <h2>EXTERNAL LINKS</h2>
-            <ul>
-              <li>LinkedIn</li>
-              <li>Facebook</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
+          <div class="bottom flex">&Copy 2022! All rights reserved!</div>
         </div>
-
-        <div class="bottom flex">&Copy 2022! All rights reserved!</div>
       </footer>
     </div>
   </body>
